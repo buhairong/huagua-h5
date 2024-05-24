@@ -1,0 +1,100 @@
+{
+	"pages": [
+		{
+		    "path": "pages/index/index",
+		    "style": {
+		        "navigationBarTitleText": "WECARS商户端",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+			"path": "pages/calc/index",
+			"style": {
+			    "navigationBarTitleText": "WECARS二手车订阅试算器",
+			    "navigationStyle": "custom"
+			}
+		},
+		{
+		    "path": "pages/rule/rule",
+		    "style": {
+		        "navigationBarTitleText": "二手车价格评估规则"
+		    }
+		},
+		{
+		    "path": "pages/calculator/calculator",
+		    "style": {
+		        "navigationBarTitleText": "WECARS二手车订阅试算器",
+		        "navigationStyle": "custom"
+		    }
+		},
+		{
+			"path": "pages/guarantor/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/guarantor/getVerifyCode",
+			"style": {
+				"navigationBarTitleText": "担保人身份认证"
+			}
+		},
+		{
+			"path": "pages/guarantor/verifyCode",
+			"style": {
+				"navigationBarTitleText": "担保人身份认证"
+			}
+		},
+		{
+			"path": "pages/guarantor/result",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/guarantor/uploadIdCard",
+			"style": {
+				"navigationBarTitleText": "担保人身份认证"
+			}
+		},
+		{
+			"path": "pages/guarantor/uploadCompanyInfo",
+			"style": {
+				"navigationBarTitleText": "担保人身份认证"
+			}
+		},
+		{
+			"path": "pages/guarantor/face-identity-tip",
+			"style": {
+				"navigationBarTitleText": "人脸识别"
+			}
+		},
+		{
+			"path": "pages/guarantor/face-identity",
+			"style": {
+				"navigationBarTitleText": "人脸识别"
+			}
+		},
+		{
+			"path": "pages/dealer/index",
+			"style": {
+			    "navigationBarTitleText": "",
+			    "navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/dealer/success",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
