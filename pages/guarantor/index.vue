@@ -31,13 +31,14 @@ export default {
 			userId: '',
 			mobile: '',
 			name: '',
+			orderId: '',
 		}
 	},
 	
 	onLoad(options) {
 		// https://h5.51cheyaoshi.com/h5/index.html#/pages/guarantor/index?type=2userId=44&mobile=13541730743&name=刘某
 		// http://192.168.2.34:8081/h5/#/pages/guarantor/index?userId=44&mobile=13641770793&name=刘某
-		// http://localhost:8081/h5/#/pages/guarantor/index?userId=44&mobile=13641770793&name=刘某
+		// http://localhost:8081/h5/#/pages/guarantor/index?userId=68&mobile=13641770793&name=刘某&orderId=1313
 		this.type = options.type
 		if (options.type == 1) {
 			this.applyService = '车辆免押金'
@@ -46,11 +47,14 @@ export default {
 		}
 		this.userId = options.userId
 		this.mobile = options.mobile
+		this.orderId = options.orderId
 		this.name = options.name
 		const params = {
 			userId: options.userId,
 			mobile: options.mobile,
+			orderId: options.orderId,
 			applicantName: options.name,
+			
 		}
 		uni.setStorageSync('guarantorIndexOptions', params)
 	},
@@ -77,6 +81,7 @@ export default {
 		async refuse() {
 			const params = {
 				 isAgree: 2,
+				 orderId: this.orderId,
 				 userId: this.userId,
 				 mobile: this.mobile,
 			}
