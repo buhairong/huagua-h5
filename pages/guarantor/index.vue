@@ -59,7 +59,9 @@ export default {
 			orderId: options.orderId,
 			userId: options.userId,
 			mobile: options.mobile,
+			orderId: options.orderId,
 			applicantName: options.name,
+			
 		}
 		uni.setStorageSync('guarantorIndexOptions', params)
 	},
@@ -101,6 +103,7 @@ export default {
 		async refuse() {
 			const params = {
 				 isAgree: 2,
+				 orderId: this.orderId,
 				 userId: this.userId,
 				 mobile: this.mobile,
 				 orderId: this.orderId,
