@@ -56,6 +56,7 @@ export default {
 		// https://h5.51cheyaoshi.com/h5/#/pages/guarantor/face-identity?idcard=310107198204081711&name=卜海荣
 		this.idcard = options.idcard
 		this.name = options.name
+		//this.save()
 	},
 	
 	onReady() {
@@ -103,6 +104,8 @@ export default {
 								imageUrl: this.src,
 								idNum: this.idcard,
 								name: this.name,
+								// idNum: '310107198204081711',
+								// name: '卜海荣',
 							}).then(result => {
 								if (result.code == 0 && result.data.pass) {
 									const reason = result.data.reason.split('(')

@@ -77,6 +77,12 @@
 			}
 		},
 		{
+			"path": "pages/guarantor/wxbview",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
 			"path": "pages/dealer/index",
 			"style": {
 			    "navigationBarTitleText": "",

@@ -6,4 +6,5 @@ export const api = {
 	faceAudit: 'app/app/audit/user/faceAudit', // 人脸识别
 	inviteCompany: 'app/partner/inviteCompany', // 经销商邀请
 	getScheme: 'app/app/getScheme', // 获取scheme
+	getContractDetail: 'app/app/contractDetail', // 获取电子签
 }
